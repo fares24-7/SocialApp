@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    margin: 0;
+}
+.card {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 30px 25px;
+    width: 320px;
+}
+.card h2 { text-align: center; margin: 0 0 20px; }
+label { display: block; font-size: 13px; margin: 12px 0 4px; }
+.card > form > input,
+.card > form > textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+input, textarea {
+    box-sizing: border-box;
+    font-family: inherit;
+}
+button {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    background: #333;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+/* Full-width submit buttons (login/register/edit/security forms) opt in explicitly,
+   instead of every small inline button on the feed/friends pages inheriting it */
+.btn-block {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+}
+.link { text-align: center; font-size: 13px; margin-top: 16px; }
+.error { color: #c0392b; font-size: 13px; margin: 4px 0; }
+
+
+/* Feed comment/reply controls */
+.comment-form,
+.reply-form {
+    display: flex;
+    width: 100%;
+    gap: 8px;
+    align-items: stretch;
+    margin: 0 0 10px 0;
+    box-sizing: border-box;
+}
+
+.comment-input {
+    display: block;
+    flex: 1 1 auto;
+    width: auto !important;
+    min-width: 0;
+    height: 36px;
+    padding: 7px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 13px;
+    box-sizing: border-box;
+}
+
+.comment-submit {
+    flex: 0 0 auto;
+    width: auto !important;
+    min-width: 92px;
+    padding: 7px 14px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 13px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.comment-submit:disabled {
+    opacity: 0.65;
+    cursor: wait;
+}
+
+@media (max-width: 600px) {
+    .comment-form,
+    .reply-form {
+        gap: 6px;
+    }
+
+    .comment-submit {
+        min-width: 78px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
