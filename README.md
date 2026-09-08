@@ -8,5 +8,5 @@ A PHP & MySQL social web application with authentication, friend connections, ac
 * **Messaging:** Real-time direct messaging via AJAX polling.
 
 ## Database Documentation
-* [Entity-Relationship Diagram (ERD)](docs/ER Diagram.pdf)
-* [Relational Schema](docs/Relational Schema.pdf)
+* [Entity-Relationship Diagram (ERD)](docs/ER%20Diagram.pdf)
+* [Relational Schema](docs/Relational%20Schema.pdf)
